@@ -19,9 +19,8 @@ public class OrderAddBindingModel {
     @NotNull
     private String name;
     @Positive
-    @NotNull
     private BigDecimal price;
-    @FutureOrPresent
+    @PastOrPresent
     @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
     private LocalDateTime orderTime;
     @NotNull

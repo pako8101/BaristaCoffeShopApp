@@ -9,5 +9,7 @@ public interface OrderService {
 
     void addOrder(OrderServiceModel orderServiceModel);
 
-    List<OrderViewModel> findAllOrdersByPriceDesc();
+    List<OrderViewModel> findAllOrderOrderByPriceDesc();
+
+    void readyOrder(Long id);
 }

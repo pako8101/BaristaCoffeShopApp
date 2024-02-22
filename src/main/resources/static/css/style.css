@@ -1,0 +1,22 @@
+.jumbotron {
+
+    opacity: inherit;
+    background-image: url(/images/coffee-shop.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+
+.bg-blur {
+
+    background-color: rgba(0, 0, 0, 0.3); /* Black w/opacity/see-through */
+}
+
+.bg-secondary {
+    background-color: white;!important;
+}
+.btn:hover{
+    color: black;
+    background-color: turquoise;
+}
