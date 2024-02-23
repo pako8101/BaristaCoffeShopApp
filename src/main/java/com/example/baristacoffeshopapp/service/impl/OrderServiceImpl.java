@@ -44,7 +44,7 @@ private final CategoryService categoryService;
 
     @Override
     public List<OrderViewModel> findAllOrderOrderByPriceDesc() {
-        return orderRepository.findAllOrderOrderByPrice()
+        return orderRepository.findAllByOrderByPriceDesc()
                 .stream().map(order -> modelMapper.map(order, OrderViewModel.class))
                 .collect(Collectors.toList());
     }
