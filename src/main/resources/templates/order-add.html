@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/responsive.css">
 <head th:replace="fragments/commons::head"></head>
 <body class="bg-secondary">
 <header th:replace="fragments/commons::nav">
 </header>
 <main role="main" class="bg-secondary">
-
+<div class="add-item">
     <div class="jumbotron">
         <div class="container text-light ">
             <h1 class="display-3 ">
@@ -78,6 +80,7 @@
             <hr class="bg-light">
         </div>
     </div>
+</div>
 </main>
 <footer th:replace="fragments/commons::footer">
 </footer>
