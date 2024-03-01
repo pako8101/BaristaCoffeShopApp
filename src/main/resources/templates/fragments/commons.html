@@ -7,6 +7,7 @@
     <title>Bar&Dinner App </title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/site-footer.css">
 
 </head>
 <body>
@@ -45,10 +46,65 @@
         </header>
     </nav>
 </header>
-<footer th:fragment="footer" class="container">
-    <p>Powered by
-        <a>&copy;P.Kamenov Spring Applications 2024. All rights reserved.</a>
-    </p>
+
+<footer th:fragment="footer" class="site-footer section" >
+        <div class="section-container">
+            <div class="columns">
+                <div class="newsletter">
+                    <h5>Bar & Dinner Kamenovi</h5>
+                    <p>Join our newsletter to stay up to date on features and releases.</p>
+                    <form action="#">
+                        <input type="text" placeholder="Enter your email" name="newsletter-email" id="newsletter-email-footer">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p>By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
+                </div>
+                <div class="panel">
+                    <h6>About Us</h6>
+                    <ul>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Trending</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="panel">
+                    <h6>More ...</h6>
+                    <ul>
+
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Support/Help</a></li>
+                        <li><a href="#">Request Topics</a></li>
+                    </ul>
+                </div>
+
+                <div class="panel">
+                    <h6>Follow us</h6>
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a></li>
+                        <li><a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i><span>X</span></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i><span>YouTube</span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="info">
+                <p class="copyright">Powered by &copy; <strong>P.Kamenov Spring Applications 2024 Design</strong> - All rights reserved.</p>
+
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Settings</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+<!--    <p>Powered by-->
+<!--        <a>&copy;P.Kamenov Spring Applications 2024. All rights reserved.</a>-->
+<!--    </p>-->
 </footer>
 </body>
 </html>

@@ -1,0 +1,141 @@
+.site-footer {
+    background: #000;
+    color: #fff;
+}
+
+.site-footer .section-container {
+
+    padding: 4em 1em;
+}
+body > footer > div > div.columns > div.newsletter > h5 {
+    color: deeppink;
+}
+body > footer > div > div.columns > div:nth-child(2) > h6{
+    color: orchid;
+}
+body > footer > div > div.columns > div:nth-child(3) > h6{
+    color: greenyellow;
+}
+
+
+body > footer > div > div.columns > div:nth-child(4) > h6{
+    color: red;
+}
+
+.site-footer .columns {
+    padding-bottom: 6em;
+}
+
+.site-footer .columns .newsletter {
+    flex: 1 1 25%;
+    margin-right: 4em;
+}
+
+.site-footer .columns .newsletter form {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.site-footer .columns .newsletter input,
+.site-footer .columns .newsletter button {
+    border-color: #fff;
+    color: #fff;
+    background: #000;
+
+}
+
+.site-footer .columns .newsletter input {
+
+    background-color: #CCCCCC;
+    margin-right: 0.2em;
+    flex: 1 1 60%;
+}
+
+.site-footer .columns .newsletter button {
+    flex: 0 1 40%;
+    background-color: darkblue;
+}
+
+.site-footer .columns .newsletter p {
+    opacity: 0.8;
+    font-size: 0.8em;
+    padding: 0.5em 0;
+    color: darkturquoise;
+}
+
+.site-footer .columns .panel {
+    flex: 1 1 auto;
+}
+
+.site-footer .columns .panel ul {
+    padding: 1em 0 0 0;
+}
+
+.site-footer .columns .panel li,
+.site-footer .columns .panel a {
+    display: block;
+}
+
+.site-footer .columns .panel a {
+    color: #CCC;
+    text-decoration: none;
+    padding: 0.4em 0;
+}
+
+.site-footer .columns .panel a:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
+.site-footer .columns .panel a i {
+    color: #fff;
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.site-footer .info {
+
+    padding-top: 2em;
+    border-top: 1px solid #fff;
+}
+
+.site-footer .info ul {
+    display: flex;
+    padding: 0;
+}
+
+.site-footer .info li,
+.site-footer .info a {
+    display: block;
+}
+
+.site-footer .info li:not(:last-child) {
+    padding: 0 1em 0 0;
+}
+
+.site-footer .info a {
+    color: #DDD;
+    text-decoration: none;
+    line-height: 0.85;
+    border-bottom: 1px solid rgb(255,255,255,0.7);
+}
+
+.site-footer .info a:hover {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 600px) {
+
+    .site-footer .columns {
+        display: flex;
+        gap: 4em;
+    }
+
+    .site-footer .info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
