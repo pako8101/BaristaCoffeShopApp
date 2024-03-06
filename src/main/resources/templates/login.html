@@ -6,6 +6,7 @@
 <header th:replace="fragments/commons::nav">
 </header>
 <main role="main" class="bg-secondary">
+    <div class="login">
     <div class="jumbotron">
         <div class="container text-light ">
             <h1 class="display-3">
@@ -26,9 +27,12 @@
                 <div class="form-group row">
                     <label for="username" class="col-sm-2 col-form-label">Username</label>
                     <div class="col-sm-10">
-                        <input th:field="*{username}" th:errorclass="is-invalid" type="text" class="form-control"
+                        <input th:field="*{username}"
+                               th:errorclass="is-invalid"
+                               type="text" class="form-control"
                                id="username"
-                               aria-describedby="usernameHelpInline" placeholder="Username">
+                               aria-describedby="usernameHelpInline"
+                               placeholder="Username">
                         <small id="usernameHelpInline"
                                class="invalid-feedback bg-danger text-light rounded">
                             Username length must be between 5 and 20 characters.
@@ -47,10 +51,11 @@
                         </small>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-info w-50">Login</button>
+                <button type="submit" class="login-btn"><a>Login</a></button>
             </form>
             <hr class="bg-light">
         </div>
+    </div>
     </div>
 </main>
 <footer th:replace="fragments/commons::footer">

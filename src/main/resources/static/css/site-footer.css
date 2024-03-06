@@ -8,10 +8,10 @@
     padding: 4em 1em;
 }
 body > footer > div > div.columns > div.newsletter > h5 {
-    color: deeppink;
+    color: deepskyblue;
 }
 body > footer > div > div.columns > div:nth-child(2) > h6{
-    color: orchid;
+    color: silver;
 }
 body > footer > div > div.columns > div:nth-child(3) > h6{
     color: greenyellow;
@@ -19,7 +19,7 @@ body > footer > div > div.columns > div:nth-child(3) > h6{
 
 
 body > footer > div > div.columns > div:nth-child(4) > h6{
-    color: red;
+    color: greenyellow;
 }
 
 .site-footer .columns {
