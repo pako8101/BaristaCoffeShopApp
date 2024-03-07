@@ -31,7 +31,7 @@
                     <label for="price" class="col-sm-2 col-form-label">Price</label>
                     <div class="col-sm-10">
                         <input  th:field="*{price}" th:errorclass="is-invalid"  type="number" step="1" class="form-control" id="price"
-                               aria-describedby="priceHelpInline">
+                               aria-describedby="priceHelpInline" placeholder="Price">
                         <small id="priceHelpInline" class="invalid-feedback bg-danger text-light rounded">
                             Price must be positive.
                         </small>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-info w-50">Add order</button>
+                <button type="submit" class="btn btn-add-order w-50">Add order</button>
             </form>
             <hr class="bg-light">
         </div>

@@ -19,6 +19,7 @@
         <div class="container bg-blur rounded p-5 mt-5 w-75 ">
             <form th:action="@{/users/login}" th:method="POST"  th:object="${userLoginBindingModel}"
                   class="text-center text-light">
+
                 <h3 th:if="${isFound==false}" class="mt-5 text-center">
                     <strong class="bg-blur rounded text-danger">
                         Wrong username and password combination.
@@ -51,7 +52,7 @@
                         </small>
                     </div>
                 </div>
-                <button type="submit" class="login-btn"><a>Login</a></button>
+                <button type="submit" class="btn login-btn w-50"><a>Login</a></button>
             </form>
             <hr class="bg-light">
         </div>

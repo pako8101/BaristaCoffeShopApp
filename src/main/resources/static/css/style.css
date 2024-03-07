@@ -432,3 +432,32 @@ button.login-btn{
   border-radius: 30px;
   box-shadow: 0px 4px 5px 0px rgba(255, 57, 70, 0.15);
 }
+small{
+  color: coral;
+}
+
+
+#gallery2 .list .w3-round {
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+#gallery2 .list .w3-round:hover{
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+#gallery1 .list .w3-round {
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+#gallery1 .list .w3-round:hover{
+  transform: scale(1.5);
+  z-index: 1;
+}
+.btn-add-order:hover{
+  background-color: peru;
+  color: navajowhite;
+  border-color: indigo;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
