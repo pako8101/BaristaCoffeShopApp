@@ -164,7 +164,7 @@ a {
 }
 
 .w3-bar .w3-bar-item {
-  padding: 8px 16px;
+  padding: 6px 12px;
   float: left;
   width: auto;
   border: none;
@@ -460,4 +460,20 @@ small{
   border-color: indigo;
   transform: scale(1);
   transition: transform 300ms ease-in-out;
+}
+.w3-bar-item {
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  width: calc(100% - 178px);
+}
+.icon-phone:before {
+  content: "\e90c";
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+@media print, screen and (min-width: 45em) and (max-width: 73.74875em)
+#phone {
+  width: calc(100% - 205px);
 }

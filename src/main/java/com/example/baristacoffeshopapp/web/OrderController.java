@@ -2,6 +2,7 @@ package com.example.baristacoffeshopapp.web;
 
 import com.example.baristacoffeshopapp.model.bindings.OrderAddBindingModel;
 import com.example.baristacoffeshopapp.model.service.OrderServiceModel;
+import com.example.baristacoffeshopapp.sec.CurrentUser;
 import com.example.baristacoffeshopapp.service.OrderService;
 import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
@@ -16,14 +17,19 @@ public class OrderController {
 
     private final OrderService orderService;
     private final ModelMapper modelMapper;
+    private final CurrentUser currentUser;
 
-    public OrderController(OrderService orderService, ModelMapper modelMapper) {
+    public OrderController(OrderService orderService, ModelMapper modelMapper, CurrentUser currentUser) {
         this.orderService = orderService;
         this.modelMapper = modelMapper;
+        this.currentUser = currentUser;
     }
 
     @GetMapping("/add")
     public String add(){
+        if (currentUser.getId()==null){
+            return "redirect:/users/login";
+        }
         return "order-add";
     }
     @PostMapping("/add")

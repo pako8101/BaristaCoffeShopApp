@@ -47,4 +47,13 @@ public class HomeController {
     public String about(){
         return "/about";
             }
+
+            @GetMapping("/contacts")
+    public String contacts(){
+        return "/contacts";
+            }
+    @GetMapping("/quality")
+    public String quality(){
+        return "/quality";
+    }
 }
