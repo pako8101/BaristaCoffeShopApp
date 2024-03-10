@@ -1,29 +1,18 @@
 .site-footer {
-    background: #000;
+    background-color: #607d8b;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
 }
 
 .site-footer .section-container {
-
-    padding: 4em 1em;
-}
-body > footer > div > div.columns > div.newsletter > h5 {
-    color: deepskyblue;
-}
-body > footer > div > div.columns > div:nth-child(2) > h6{
-    color: silver;
-}
-body > footer > div > div.columns > div:nth-child(3) > h6{
-    color: greenyellow;
-}
-
-
-body > footer > div > div.columns > div:nth-child(4) > h6{
-    color: greenyellow;
+    padding: 4rem 2rem;
 }
 
 .site-footer .columns {
-    padding-bottom: 6em;
+    padding-bottom: 3em;
+    margin-top: -30px;
 }
 
 .site-footer .columns .newsletter {
@@ -42,26 +31,20 @@ body > footer > div > div.columns > div:nth-child(4) > h6{
     border-color: #fff;
     color: #fff;
     background: #000;
-
 }
 
 .site-footer .columns .newsletter input {
-
-    background-color: #CCCCCC;
-    margin-right: 0.2em;
     flex: 1 1 60%;
 }
 
 .site-footer .columns .newsletter button {
     flex: 0 1 40%;
-    background-color: darkblue;
 }
 
 .site-footer .columns .newsletter p {
     opacity: 0.8;
     font-size: 0.8em;
     padding: 0.5em 0;
-    color: darkturquoise;
 }
 
 .site-footer .columns .panel {
@@ -85,7 +68,7 @@ body > footer > div > div.columns > div:nth-child(4) > h6{
 
 .site-footer .columns .panel a:hover {
     text-decoration: underline;
-    color: gold;
+    color: #fff;
 }
 
 .site-footer .columns .panel a i {
@@ -95,9 +78,11 @@ body > footer > div > div.columns > div:nth-child(4) > h6{
 }
 
 .site-footer .info {
-
-    padding-top: 2em;
+    display: flex;
+    position: absolute;
+    padding-top: 2rem;
     border-top: 1px solid #fff;
+    margin-top: 200px;
 }
 
 .site-footer .info ul {
@@ -133,9 +118,6 @@ body > footer > div > div.columns > div:nth-child(4) > h6{
         gap: 4em;
     }
 
-    .site-footer .info {
-        display: flex;
-        justify-content: space-between;
-    }
+
 
 }

@@ -50,6 +50,7 @@ input {
 button,
 input {
   overflow: visible;
+
 }
 
 button {
@@ -153,7 +154,7 @@ a {
 .w3-input {
   padding: 8px;
   display: block;
-  border: none;
+  border: solid black !important;
   border-bottom: 1px solid #ccc;
   width: 100%;
 }
@@ -162,6 +163,10 @@ a {
   width: 100%;
   overflow: hidden;
 }
+input{
+  border: solid dimgray !important;
+}
+
 
 .w3-bar .w3-bar-item {
   padding: 6px 12px;
@@ -327,13 +332,16 @@ a {
 
 .register{
 color: #607d8b;
-  margin-left: 200px;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
 
 }
 
 
 .form-control,.col-sm-2{
   margin: 5px;
+
 
 }
 button.register-btn{
@@ -383,8 +391,10 @@ button.register-btn{
 
 .login{
   color: #607d8b;
-  margin-left: 200px;
 
+ margin-top: 1rem;
+margin-bottom: 5rem;
+  margin-left: 5rem;
 }
 
 
@@ -462,7 +472,7 @@ small{
   transition: transform 300ms ease-in-out;
 }
 .w3-bar-item {
-  display: inline-block;
+  display: flex;
   line-height: 50px;
   text-align: center;
   width: calc(100% - 178px);
@@ -476,4 +486,7 @@ small{
 @media print, screen and (min-width: 45em) and (max-width: 73.74875em)
 #phone {
   width: calc(100% - 205px);
+}
+#contact{
+  line-height: 30px;
 }

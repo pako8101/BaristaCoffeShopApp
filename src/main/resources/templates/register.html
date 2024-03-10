@@ -55,7 +55,7 @@
                 <div class="form-group row">
                     <label for="email" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
-                        <input th:field="*{email}" th:errorclass="bg-danger" type="text" class="form-control" id="email"
+                        <input th:field="*{email}" th:errorclass="'is-invalid bg-danger'" type="text" class="form-control" id="email"
                                aria-describedby="emailHelpInline" placeholder="email@example.com">
                         <small th:if="${#fields.errors('email')}" th:errors="*{email}" class="text-danger">
                             Enter valid email address.
