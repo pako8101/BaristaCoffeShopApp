@@ -301,6 +301,9 @@ input{
 }
 
 .w3-white {
+  font-weight: bold;
+  letter-spacing: normal;
+  font-size: small;
   color: black;
 background-color: antiquewhite;
   /*background-image: url("static/images/navBarBackground.jpg");*/
