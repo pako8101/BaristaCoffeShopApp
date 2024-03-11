@@ -90,9 +90,9 @@ return "redirect:/";
     }
     @GetMapping("/profile/{id}")
     private String profile(@PathVariable Long id, Model model){
-
-
         model
+
+
                 .addAttribute("user", modelMapper
                         .map(userService.findById(id), UserViewModel.class));
 

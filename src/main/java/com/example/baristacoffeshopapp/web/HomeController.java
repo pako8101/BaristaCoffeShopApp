@@ -56,4 +56,8 @@ public class HomeController {
     public String quality(){
         return "/quality";
     }
+    @GetMapping("/newOffers")
+    public String newOffers(){
+        return "newOffers";
+    }
 }
