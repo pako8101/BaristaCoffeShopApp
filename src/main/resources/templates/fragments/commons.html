@@ -17,12 +17,14 @@
         <section class="w3-top">
             <article class="w3-bar w3-white w3-padding w3-card">
 
-                <a style="color: crimson;margin: 0" href="/" class="w3-bar-item w3-button">Bar and Dinner Kamenovi</a>
+                <a style="color: crimson;margin-bottom: -10px" href="/" class="w3-bar-item w3-button">Bar and Dinner
+                    Kamenovi</a>
 
 
-                <article style="letter-spacing: normal" class="w3-right w3-hide-small">
-                    <a  class="w3-bar-item phone"
-                        style="line-height: 30px;font-size: x-small;margin-top: 0.75rem; color: steelblue;padding-right: 10px">Veliko Tarnovo 0899 199 149</a>
+                <article style="letter-spacing: -1px; line-height: 22px;" class="w3-right w3-hide-small">
+                    <a class="w3-bar-item phone"
+                       style="line-height: 30px;font-size: x-small;margin-top: 0.75rem; color: steelblue;padding-right: 10px">Veliko
+                        Tarnovo 0899 199 149</a>
                     <th:block th:if="${@currentUser.id==null}">
 
                         <a class="w3-bar-item w3-button" href="/users/login">Login</a>
@@ -30,13 +32,15 @@
                         <a href="/about" class="w3-bar-item w3-button">About</a>
                         <a href="/quality" class="w3-bar-item w3-button">Quality</a>
 
+
                     </th:block>
 
                     <th:block th:if="${@currentUser.id!=null}">
-<!--                         <a class="phone-wrapper" style="line-height: 10px;color: darkgray;padding-right: 10px ; ">Veliko Tarnovo 000 12 00 149</a>-->
+                        <!--                         <a class="phone-wrapper" style="line-height: 10px;color: darkgray;padding-right: 10px ; ">Veliko Tarnovo 000 12 00 149</a>-->
                         <a class="w3-bar-item w3-button" href="/orders/add">Add Order</a>
                         <a class="w3-bar-item w3-button" href="/newOffers">New offers</a>
-                        <a class="w3-bar-item w3-button" th:href="@{/users/profile/{id}(id=${@currentUser.id})}">Profile</a>
+                        <a class="w3-bar-item w3-button"
+                           th:href="@{/users/profile/{id}(id=${@currentUser.id})}">Profile</a>
                         <a class="w3-bar-item w3-button" href="/users/logout">Logout</a>
 
 
@@ -44,20 +48,23 @@
                     <a href="/contacts" class="w3-bar-item w3-button">Contacts</a>
                     <a href="https://www.forlife.bg/calculator" class="w3-bar-item w3-button">Calories per
                         ingredient</a>
-                    <a href="/" class=" w3-button"><div class="home-container01">
-                        <input type="text" placeholder="search" name="search" class="home-textinput input" />
-                        <button style="background: olive; margin-left: 5px" type="submit">Search</button>
-                    </div></a>
+                    <a href="/" class=" w3-button">
+                        <div class="home-container01">
+                            <input type="text" placeholder="search" name="search" class="home-textinput input"/>
+                            <button style="background: olive; margin-left: 5px" type="submit">Search</button>
+                        </div>
+                    </a>
 
-<!--                        <input class="page-search-header" type="text">-->
-<!--                        <button type="submit">Search</button>-->
+                    <!--                        <input class="page-search-header" type="text">-->
+                    <!--                        <button type="submit">Search</button>-->
 
                 </article>
             </article>
         </section>
 
         <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;" id="home">
-            <img class="w3-image" src="https://images.unsplash.com/photo-1633636489905-397fdbf52236?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            <img class="w3-image"
+                 src="https://images.unsplash.com/photo-1633636489905-397fdbf52236?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                  width="1600" height="800">
             <article class="w3-display-bottomleft w3-padding-large w3-opacity">
                 <h1 class="w3-xxlarge">Service</h1>
@@ -66,61 +73,66 @@
     </nav>
 </header>
 
-<footer th:fragment="footer" class="site-footer section" >
-        <div class="section-container">
-            <div class="columns">
-                <div class="newsletter">
-                    <h5>Bar & Dinner Kamenovi</h5>
-                    <p>Join our newsletter to stay up to date on features and releases.</p>
-                    <form action="#">
-                        <input type="text" placeholder="Enter your email" name="newsletter-email" id="newsletter-email-footer">
-                        <button type="submit">Subscribe</button>
-                    </form>
-                    <p>By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
-                </div>
-                <div class="panel">
-                    <h6><a href="/about">About Us</a> </h6>
-                    <ul>
-                        <li><a href="#">Popular</a></li>
-                        <li><a href="#">Trending</a></li>
+<footer th:fragment="footer" class="site-footer section">
+    <div class="section-container">
+        <div class="columns">
+            <div class="newsletter">
+                <h5>Bar & Dinner Kamenovi</h5>
+                <p>Join our newsletter to stay up to date on features and releases.</p>
+                <form action="#">
+                    <input type="text" placeholder="Enter your email" name="newsletter-email"
+                           id="newsletter-email-footer">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p>By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our
+                    company.</p>
+            </div>
+            <div class="panel">
+                <h6><a href="/about">About Us</a></h6>
+                <ul>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
 
-                    </ul>
-                </div>
-
-                <div class="panel">
-                    <h6>More ...</h6>
-                    <ul>
-
-                        <li><a href="/contacts">Contact</a></li>
-                        <li><a href="#">Support/Help</a></li>
-                        <li><a href="#">Request Topics</a></li>
-                    </ul>
-                </div>
-
-                <div class="panel">
-                    <h6>Follow us</h6>
-                    <ul>
-                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a></li>
-                        <li><a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i><span>X</span></a></li>
-                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
-                        <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i><span>YouTube</span></a></li>
-                    </ul>
-                </div>
-
+                </ul>
             </div>
 
-            <div class="info">
-                <p class="copyright">Powered by &copy; <strong>P.Kamenov Spring Applications 2024 Design</strong> - All rights reserved.</p>
-
+            <div class="panel">
+                <h6>More ...</h6>
                 <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Cookie Settings</a></li>
+
+                    <li><a href="/contacts">Contact</a></li>
+                    <li><a href="#">Support/Help</a></li>
+                    <li><a href="#">Request Topics</a></li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h6>Follow us</h6>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i
+                            class="fa-brands fa-facebook"></i><span>Facebook</span></a></li>
+                    <li><a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i><span>X</span></a></li>
+                    <li><a href="https://www.instagram.com/"><i
+                            class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i><span>YouTube</span></a>
+                    </li>
                 </ul>
             </div>
 
         </div>
-    </footer>
+
+        <div class="info">
+            <p class="copyright">Powered by &copy; <strong>P.Kamenov Spring Applications 2024 Design</strong> - All
+                rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Cookie Settings</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
 <!--    <p>Powered by-->
 <!--        <a>&copy;P.Kamenov Spring Applications 2024. All rights reserved.</a>-->
 <!--    </p>-->

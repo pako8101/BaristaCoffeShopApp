@@ -1,6 +1,9 @@
 .site-footer {
-    background-color: #607d8b;
-    background-position: center;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    background-color: darkslategray;
+    /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -8,11 +11,12 @@
 
 .site-footer .section-container {
     padding: 4rem 2rem;
+    margin-bottom: -5rem;
 }
 
 .site-footer .columns {
-    padding-bottom: 3em;
-    margin-top: -30px;
+    padding-bottom: 1em;
+    margin-top: -20px;
 }
 
 .site-footer .columns .newsletter {
@@ -30,11 +34,12 @@
 .site-footer .columns .newsletter button {
     border-color: #fff;
     color: #fff;
-    background: #000;
+    background: #4373;
 }
 
 .site-footer .columns .newsletter input {
     flex: 1 1 60%;
+    color: white;
 }
 
 .site-footer .columns .newsletter button {
@@ -96,7 +101,7 @@
 }
 
 .site-footer .info li:not(:last-child) {
-    padding: 0 1em 0 0;
+    padding: 0 1em 0 1rem;
 }
 
 .site-footer .info a {
