@@ -1,5 +1,5 @@
 package com.example.baristacoffeshopapp.model.entities.enums;
 
 public enum CategoryNameEnum {
-    PEDESTRIAN, BICYCLE, MOTORCYCLE, CAR
+    CAKE, DRINK,PIZZA,SPAGHETTI,BURGER, COFFEE, OTHER
 }

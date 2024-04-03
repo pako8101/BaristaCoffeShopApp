@@ -18,7 +18,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public void initCategories() {
-        if (categoryRepository.count()!= 0){
+        if (categoryRepository.count() != 0) {
             return;
         }
 
@@ -27,6 +27,9 @@ public class CategoryServiceImpl implements CategoryService {
                     Category category = new Category();
                     category.setName(categoryNameEnum);
                     switch (categoryNameEnum) {
+                        case PIZZA -> category.setNeededTime(15);
+                        case SPAGHETTI -> category.setNeededTime(16);
+                        case BURGER -> category.setNeededTime(11);
                         case CAKE -> category.setNeededTime(10);
                         case DRINK -> category.setNeededTime(1);
                         case COFFEE -> category.setNeededTime(2);
@@ -39,6 +42,6 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public Category findByCategoryNameEnum(CategoryNameEnum categoryNameEnum) {
         return categoryRepository.findByName(categoryNameEnum)
-                .orElseThrow();
+                .orElse(null);
     }
 }

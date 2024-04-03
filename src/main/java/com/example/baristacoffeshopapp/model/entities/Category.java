@@ -18,5 +18,8 @@ public class Category extends BaseEntity {
     @Column(nullable = false)
     private Integer neededTime;
 
-
+    public Category(CategoryNameEnum name, Integer neededTime) {
+        this.name = name;
+        this.neededTime = neededTime;
+    }
 }
