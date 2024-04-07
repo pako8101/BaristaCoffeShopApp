@@ -1,7 +1,7 @@
 package com.example.baristacoffeshopapp.service.impl;
 
 import com.example.baristacoffeshopapp.model.entities.Category;
-import com.example.baristacoffeshopapp.model.entities.CategoryNameEnum;
+import com.example.baristacoffeshopapp.model.entities.enums.CategoryNameEnum;
 import com.example.baristacoffeshopapp.repository.CategoryRepository;
 import com.example.baristacoffeshopapp.service.CategoryService;
 import org.springframework.stereotype.Service;

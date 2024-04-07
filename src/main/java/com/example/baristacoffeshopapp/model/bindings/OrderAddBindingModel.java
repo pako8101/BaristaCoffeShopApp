@@ -1,6 +1,6 @@
 package com.example.baristacoffeshopapp.model.bindings;
 
-import com.example.baristacoffeshopapp.model.entities.CategoryNameEnum;
+import com.example.baristacoffeshopapp.model.entities.enums.CategoryNameEnum;
 import jakarta.validation.constraints.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,7 +8,6 @@ import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter

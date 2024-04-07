@@ -7,7 +7,7 @@ import com.example.baristacoffeshopapp.model.view.UserViewModel;
 import java.util.List;
 
 public interface UserService {
-    UserServiceModel registerUser(UserServiceModel userServiceModel);
+    boolean registerUser(UserServiceModel userServiceModel);
 
     UserServiceModel findByUsernameAndPassword(String username, String password);
 

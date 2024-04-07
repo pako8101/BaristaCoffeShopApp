@@ -26,7 +26,15 @@ private final ModelMapper modelMapper;
     }
 
     @GetMapping("/register")
-    public String register() {
+    public String register(Model model,HttpSession httpSession) {
+        if (httpSession.getAttribute("user")!=null) {
+            return "redirect:/";
+        }
+        if (!model.containsAttribute("userRegisterBindingModel")) {
+            model.addAttribute("userRegisterBindingModel",new UserRegisterBindingModel());
+            model.addAttribute("isExist",false);
+
+        }
         return "register";
     }
 
@@ -46,8 +54,16 @@ private final ModelMapper modelMapper;
 
             return "redirect:register";
         }
-        userService.registerUser(modelMapper
+     boolean isSaved =   userService.registerUser(modelMapper
                 .map(userRegisterBindingModel, UserServiceModel.class));
+
+        if (!isSaved){
+            redirectAttributes.addFlashAttribute("userRegisterBindingModel",
+                    userRegisterBindingModel);
+            redirectAttributes.addFlashAttribute("isExist", true);
+            return "redirect:register";
+        }
+
         return "redirect:login";
     }
 

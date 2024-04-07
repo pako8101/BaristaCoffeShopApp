@@ -1,0 +1,56 @@
+
+.register{
+    color: #607d8b;
+    margin: 1rem auto 5rem 15rem;
+    /*margin-top: 1rem;*/
+    /*margin-bottom: 5rem;*/
+    /*margin-left: 5rem;*/
+
+}
+
+
+.form-control,.col-sm-2{
+    margin: 5px;
+
+
+}
+button.register-btn{
+    background-color: white;
+
+    border: white;
+}
+.register-btn{
+    margin-top: 30px;
+    margin-left: 33px;
+}
+
+
+.register-btn a:first-child:hover {
+    background: #fff;
+    border: 2px solid #ff3946;
+    color: #314584;
+    padding: 17px 35px;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.register-btn a:last-child {
+    color: #314584;
+    padding: 17px 35px;
+    font-size: 1rem;
+}
+
+.register-btn a:last-child:hover {
+    color: #ff3946;
+    transition: all 0.3s ease;
+}
+.register-btn a:first-child {
+    background: dimgrey;
+    border: 2px solid lawngreen;
+    color: #fff;
+    padding: 17px 35px;
+    font-size: 1rem;
+    border-radius: 30px;
+    box-shadow: 0px 4px 5px 0px rgba(255, 57, 70, 0.15);
+}

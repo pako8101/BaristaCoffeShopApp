@@ -1,5 +1,6 @@
 package com.example.baristacoffeshopapp.model.entities;
 
+import com.example.baristacoffeshopapp.model.entities.enums.CategoryNameEnum;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

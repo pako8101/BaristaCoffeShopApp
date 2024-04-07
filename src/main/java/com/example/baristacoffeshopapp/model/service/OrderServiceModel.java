@@ -1,10 +1,7 @@
 package com.example.baristacoffeshopapp.model.service;
 
-import com.example.baristacoffeshopapp.model.entities.Category;
-import com.example.baristacoffeshopapp.model.entities.CategoryNameEnum;
+import com.example.baristacoffeshopapp.model.entities.enums.CategoryNameEnum;
 import com.example.baristacoffeshopapp.model.entities.User;
-import jakarta.persistence.Column;
-import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
