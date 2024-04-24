@@ -66,7 +66,7 @@
                                  name="category" class="custom-select"
                                 aria-describedby="categoryHelpInline">
                             <option value="" selected>Category</option>
-                            <option th:each="c: ${T(com.example.baristacoffeshopapp.model.entities.CategoryNameEnum).values()}"
+                            <option th:each="c: ${T(com.example.baristacoffeshopapp.model.entities.enums.CategoryNameEnum).values()}"
                                     th:value="${c}" th:text="${c}">Coffee</option>
                         </select>
                         <small id="categoryHelpInline" th:errors="*{category}"
